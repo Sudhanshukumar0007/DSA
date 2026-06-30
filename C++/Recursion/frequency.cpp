@@ -1,0 +1,17 @@
+#include <iostream>
+#include <unordered_map>
+using namespace std;
+
+int main() {
+    string s = "abbca";
+    unordered_map<char, int> freq;
+    for (char c : s) {
+        freq[c]++;
+    }
+
+    for (const auto& p : freq) {
+        cout << p.first << ": " << p.second << endl;
+    }
+
+    return 0;
+}

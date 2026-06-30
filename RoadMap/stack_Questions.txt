@@ -1,0 +1,47 @@
+Absolutely! Here's a 🔥 **"Must-Do Question List"** for **Stacks and Queues**, perfect for prepping for your test tomorrow. These cover **both array-based and linked list-based** implementations, edge cases, and common logic-based problems.
+
+---
+
+## 🧩 **Must-Do Questions – Stack**
+### 🧱 Basics
+1. **Implement Stack using Array**
+2. **Implement Stack using Linked List**
+3. **Check if Stack is Empty or Full**
+4. **Reverse a Stack using Recursion**
+5. **Implement 2 Stacks in a Single Array**
+
+### 🔄 Applications
+6. **Balanced Parentheses** – `({[()]})` → valid?
+7. **Postfix Expression Evaluation**
+8. **Prefix to Infix Conversion**
+9. **Infix to Postfix Conversion**
+10. **Next Greater Element**
+11. **Sort a Stack using Recursion**
+
+---
+
+## 🔁 **Must-Do Questions – Queue**
+### 🧱 Basics
+1. **Implement Queue using Array**
+2. **Implement Queue using Linked List**
+3. **Implement Circular Queue**
+4. **Implement Deque (Double Ended Queue)**
+5. **Implement Queue using Two Stacks**
+
+### 🔄 Applications
+6. **Generate Binary Numbers from 1 to N using Queue**
+7. **Reversing First K Elements of a Queue**
+8. **Interleave the First Half of the Queue with Second Half**
+9. **Implement Stack using Two Queues**
+10. **LRU Cache (Least Recently Used)** – Advanced but good for prep
+
+---
+
+### ⚔️ **Challenge Yourself**
+- 🔁 Evaluate Postfix expression like `"231*+9-"` → Output?
+- 🧠 Can you trace each step of `enqueue` and `dequeue`?
+- 📐 Time & Space Complexity of every function you implement
+
+---
+
+Would you like a PDF or a printable checklist version of this? Or want me to give practice questions from this list one-by-one with test cases?

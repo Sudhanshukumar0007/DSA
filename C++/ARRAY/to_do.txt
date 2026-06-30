@@ -1,0 +1,73 @@
+### ✅ **Must-Do Array Programs in C++**
+
+#### 🔍 **Search Algorithms** *(you’ve done these)*
+
+* ✅ Linear Search
+* ✅ Binary Search (Make sure the array is sorted)
+
+---
+
+### 🔁 **Array Traversal and Manipulation**
+
+1. **Insert an element at a specific position** (done)
+2. **Delete an element from a specific position and also by element** (done)
+3. **Reverse an array** (done)
+4. **Rotate array by `d` positions**
+
+   * Left rotation     (done)
+   * Right rotation    (done)
+5. **Find maximum and minimum element** (done)
+6. **Find the second largest/smallest element**(done)
+7. **Check if array is sorted** (done)
+8. **Remove duplicates from a sorted array** (done)
+9. **Move all zeros to the end**     (done)
+10. **Frequency count of each element** (done)
+11. **Left/Right shift elements by 1**  (done)
+12. **Copy one array to another**    (done)
+13.interleaving of two arrays.       (done)  
+
+---
+
+### ⚙️ **Problem-Solving and Patterns**
+
+1. **Kadane's Algorithm** – Max subarray sum
+2. **Prefix sum array**
+3. **Count occurrences of an element**
+4. **Check for subarray with given sum (Sliding Window / Hashing)**
+5. **Find missing number from 1 to N**
+6. **Find duplicates using hashing or Floyd’s algorithm**
+7. **Merge two sorted arrays**
+8. **Intersection and Union of arrays**
+(DONE)
+
+---
+
+### 💡 **Sorting Algorithms (must-know with arrays)**
+
+1. **Bubble Sort** (done)
+2. **Selection Sort**  (done)
+3. **Insertion Sort**  (done)
+4. **Merge Sort** (Divide and conquer)  (done)
+5. **Quick Sort**  (done)
+6. **Counting Sort** (good for small-range integers) 
+7. **STL `sort()` function (and custom comparator)**
+
+---
+
+### 🔄 **Two-Pointer Problems** (Important for Interviews)
+
+1. **Pair with given sum**  (done)
+2. **Triplet with given sum** (done)
+3. **Sort 0s, 1s, and 2s (Dutch National Flag Problem)**(done)
+
+---
+
+### 📦 **Bonus (C++ STL Integration)**
+
+* `std::vector` operations (dynamic arrays)
+* Use of `std::sort()`, `std::find()`, `std::binary_search()`
+* Difference between `array[]` and `vector<>`
+
+---
+
+Would you like a **structured roadmap** or practice questions for each topic next?

@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct node {
+    int data;
+    struct node *left;
+    struct node *right;
+};
+
+typedef struct node* NODE;
+
+// Create tree
+NODE create() {
+    NODE newNode;
+    int val;
+
+    printf("Enter data (-1 for no node): ");
+    scanf("%d", &val);
+
+    if (val == -1) {
+        return NULL;
+    }
+
+    newNode = (NODE) malloc(sizeof(struct node));
+    newNode->data = val;
+
+    printf("Enter left child of %d:\n", val);
+    newNode->left = create();
+
+    printf("Enter right child of %d:\n", val);
+    newNode->right = create();
+
+    return newNode;
+}
+
+// PostOrder traversal
+void PostOrder(NODE root) {
+    if (root == NULL) return;
+    PostOrder(root->left);
+   PostOrder(root->right);
+      printf("%d ", root->data);
+}
+
+// Pretty tree print (rotated 90 degrees)
+
+int main() {
+    NODE root = NULL;
+    root = create();
+
+    printf("\nPostOrder Traversal:\n");
+    PostOrder(root);
+    return 0;
+}

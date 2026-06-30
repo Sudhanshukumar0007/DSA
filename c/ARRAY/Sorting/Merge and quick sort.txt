@@ -1,0 +1,181 @@
+Great! Let's look at **Merge Sort** and **Quick Sort**, which use recursion efficiently and are much faster than Bubble Sort. 🚀  
+
+---
+
+## **1️⃣ Merge Sort (Divide & Conquer)**
+### **How It Works?**
+1. **Divide:** Recursively split the array into two halves until each half has only one element.  
+2. **Conquer:** Merge the sorted halves back together.  
+3. **Merge:** During merging, maintain the correct order of elements.
+
+### **Time Complexity:**  
+✅ **Best, Average, and Worst Case: O(N log N)**  
+✅ **Stable Sort** (Maintains relative order of duplicate elements)  
+
+---
+
+### **Merge Sort Code (Recursive)**
+```c
+#include <stdio.h>
+
+// Merge Function: Merges two sorted halves
+void merge(int arr[], int left, int mid, int right) {
+    int n1 = mid - left + 1;
+    int n2 = right - mid;
+
+    int L[n1], R[n2];
+
+    // Copy data into temp arrays
+    for (int i = 0; i < n1; i++) L[i] = arr[left + i];
+    for (int i = 0; i < n2; i++) R[i] = arr[mid + 1 + i];
+
+    int i = 0, j = 0, k = left;
+    while (i < n1 && j < n2) {
+        if (L[i] <= R[j]) arr[k++] = L[i++];
+        else arr[k++] = R[j++];
+    }
+
+    // Copy remaining elements
+    while (i < n1) arr[k++] = L[i++];
+    while (j < n2) arr[k++] = R[j++];
+}
+
+// Recursive Merge Sort
+void mergeSort(int arr[], int left, int right) {
+    if (left < right) {
+        int mid = left + (right - left) / 2;
+        mergeSort(arr, left, mid);
+        mergeSort(arr, mid + 1, right);
+        merge(arr, left, mid, right);
+    }
+}
+
+int main() {
+    int n;
+    printf("Enter size of the array: ");
+    scanf("%d", &n);
+
+    int arr[n];
+    printf("Enter array elements:\n");
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    mergeSort(arr, 0, n - 1);
+
+    printf("Sorted array:\n");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
+```
+
+---
+
+## **2️⃣ Quick Sort (Divide & Conquer)**
+### **How It Works?**
+1. **Pick a Pivot:** Choose a pivot element (e.g., last element).  
+2. **Partition:** Arrange elements such that all smaller elements are on the left and larger elements are on the right.  
+3. **Recursion:** Recursively apply Quick Sort on left and right partitions.
+
+### **Time Complexity:**
+✅ **Best & Average Case: O(N log N)**  
+❌ **Worst Case: O(N²) (if the pivot selection is poor, e.g., sorted array)**  
+✅ **In-Place Sorting** (Unlike Merge Sort, no extra space needed)  
+✅ **Faster than Merge Sort for small datasets**  
+
+---
+
+### **Quick Sort Code (Recursive)**
+```c
+#include <stdio.h>
+
+// Partition Function (places pivot in correct position)
+int partition(int arr[], int low, int high) {
+    int pivot = arr[high]; // Choosing last element as pivot
+    int i = low - 1;
+
+    for (int j = low; j < high; j++) {
+        if (arr[j] < pivot) {
+            i++;
+            // Swap arr[i] and arr[j]
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
+    }
+
+    // Swap pivot element to its correct position
+    int temp = arr[i + 1];
+    arr[i + 1] = arr[high];
+    arr[high] = temp;
+
+    return i + 1;
+}
+
+// Quick Sort Recursive Function
+void quickSort(int arr[], int low, int high) {
+    if (low < high) {
+        int pivotIndex = partition(arr, low, high);
+        quickSort(arr, low, pivotIndex - 1);
+        quickSort(arr, pivotIndex + 1, high);
+    }
+}
+
+int main() {
+    int n;
+    printf("Enter size of the array: ");
+    scanf("%d", &n);
+
+    int arr[n];
+    printf("Enter array elements:\n");
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    quickSort(arr, 0, n - 1);
+
+    printf("Sorted array:\n");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
+```
+
+---
+
+## **Comparison: Merge Sort vs. Quick Sort**
+| Feature | Merge Sort | Quick Sort |
+|---------|-----------|------------|
+| **Time Complexity (Best/Average)** | **O(N log N)** | **O(N log N)** |
+| **Time Complexity (Worst)** | **O(N log N)** | **O(N²) (poor pivot selection)** |
+| **Space Complexity** | **O(N) (extra arrays used)** | **O(1) (in-place)** |
+| **Stability** | ✅ Stable (Maintains order of duplicates) | ❌ Not Stable |
+| **Use Case** | Best for **large datasets** | Best for **small & medium datasets** |
+| **Performance** | Slightly slower but guaranteed O(N log N) | Faster but may degrade to O(N²) |
+
+---
+
+## **When to Use Which?**
+✅ **Use Merge Sort** when:
+- You need **stable sorting** (maintain order of duplicates).
+- You're dealing with **large datasets**.
+- You don’t mind extra **O(N) space complexity**.
+
+✅ **Use Quick Sort** when:
+- You need **in-place sorting** (**O(1) extra space**).
+- You want **better average performance** for random inputs.
+- The dataset is **not already sorted** (prevents worst-case O(N²)).
+
+---
+
+## **Final Thoughts**
+🔥 **Quick Sort is often faster** due to low constant factors but can be bad in worst-case scenarios.  
+🔥 **Merge Sort is safer** with **consistent O(N log N) time** but needs **extra space**.  
+🔥 **Both are way better than Bubble Sort (O(N²)) for large inputs!**  
+
+Would you like to practice **Heap Sort**, **Counting Sort**, or any other sorting algorithm? 🚀

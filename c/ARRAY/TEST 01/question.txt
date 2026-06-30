@@ -1,0 +1,67 @@
+Here are **25 coding questions** from **basic to hard**, covering **Arrays, Searching, Sorting, and Linked Lists** as per your syllabus. 🚀  
+
+---
+
+### **📌 Basic Level (1-10)**  
+
+1️⃣ **Write a program to find the maximum and minimum elements in an array.**  
+
+2️⃣ **Implement Linear Search** to find an element in an unsorted array.  
+
+3️⃣ **Implement Binary Search** on a sorted array.  
+
+4️⃣ **Write a program to reverse an array** in-place.  
+
+5️⃣ **Find the second largest element in an array.**  
+
+6️⃣ **Write a function to check if a given array is sorted in ascending order.**  
+
+7️⃣ **Write a program to merge two sorted arrays into a single sorted array.**  
+
+8️⃣ **Write a program to remove duplicate elements from a sorted array.**  
+
+9️⃣ **Write a function to find the intersection of two sorted arrays.**  
+
+🔟 **Write a program to rotate an array to the right by `k` positions.**  
+
+---
+
+### **📌 Moderate Level (11-20)**  
+
+1️⃣1️⃣ **Implement Insertion Sort** and display the number of swaps performed.  
+
+1️⃣2️⃣ **Implement Bubble Sort** and optimize it to stop if the array is already sorted.  
+
+1️⃣3️⃣ **Implement Quick Sort** using recursion.  
+
+1️⃣4️⃣ **Implement Merge Sort** and count the number of inversions in the array.  
+
+1️⃣5️⃣ **Find the kth smallest element in an array** using Quick Select.  
+
+1️⃣6️⃣ **Find the missing number in an array of size `n` containing numbers from `1` to `n`.**  
+
+1️⃣7️⃣ **Implement a program to check if a given matrix is a Sparse Matrix.**  
+
+1️⃣8️⃣ **Transpose a given matrix without using an extra matrix.**  
+
+1️⃣9️⃣ **Find the largest sum subarray using Kadane’s Algorithm.**  
+
+2️⃣0️⃣ **Find a pair of numbers in an array that sum up to a given target using Hashing.**  
+
+---
+
+### **📌 Hard Level (21-25)**  
+
+2️⃣1️⃣ **Reverse a Singly Linked List using iterative and recursive methods.**  
+
+2️⃣2️⃣ **Detect and remove a loop in a Linked List using Floyd’s Cycle Detection Algorithm.**  
+
+2️⃣3️⃣ **Merge two sorted Linked Lists without using extra space.**  
+
+2️⃣4️⃣ **Find the middle node of a Linked List in one pass.**  
+
+2️⃣5️⃣ **Reverse a Doubly Linked List.**  
+
+---
+
+These questions will help you **master arrays, searching, sorting, and linked lists step by step**. 💪 Let me know if you need **solutions or explanations** for any! 🚀

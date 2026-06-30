@@ -1,0 +1,1 @@
+DeleteNodeByValue(head,60);

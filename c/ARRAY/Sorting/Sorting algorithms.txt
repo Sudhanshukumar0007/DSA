@@ -1,0 +1,29 @@
+There are many sorting algorithms, each suited for different use cases. Here's a table summarizing the most important ones:  
+
+---
+
+### **Sorting Algorithms and Their Use Cases**  
+
+| Sorting Algorithm      | Time Complexity (Best/Average/Worst) | Space Complexity | Stable? | When to Use? |
+|-----------------------|---------------------------------|-----------------|--------|-------------|
+| **Bubble Sort**       | O(N) / O(N²) / O(N²)           | O(1)            | ✅ Yes  | Small datasets, simple cases, learning purposes |
+| **Selection Sort**    | O(N²) / O(N²) / O(N²)          | O(1)            | ❌ No   | Small datasets, when memory is very limited |
+| **Insertion Sort**    | O(N) / O(N²) / O(N²)           | O(1)            | ✅ Yes  | Almost sorted data, small datasets |
+| **Merge Sort**        | O(N log N) / O(N log N) / O(N log N) | O(N) | ✅ Yes  | Large datasets, linked lists, when stability is needed |
+| **Quick Sort**        | O(N log N) / O(N log N) / O(N²) | O(log N) (average case) | ❌ No | Large datasets, when fast sorting is needed |
+| **Heap Sort**         | O(N log N) / O(N log N) / O(N log N) | O(1) | ❌ No | Priority queues, when stable sort is not required |
+| **Counting Sort**     | O(N + K) / O(N + K) / O(N + K) | O(K) | ✅ Yes | Small range of numbers (e.g., [0, 1000]) |
+| **Radix Sort**        | O(NK) / O(NK) / O(NK)          | O(N + K)        | ✅ Yes  | Large numbers, integer sorting |
+| **Bucket Sort**       | O(N) / O(N) / O(N²)            | O(N)            | ✅ Yes  | Uniformly distributed floating-point numbers |
+| **Tim Sort** (Python’s built-in sort) | O(N) / O(N log N) / O(N log N) | O(N) | ✅ Yes | Real-world applications, built-in sorting in Python & Java |
+
+---
+
+### **How to Choose the Right Sorting Algorithm?**
+- **If the data is small (N < 10⁴)** → **Insertion Sort or Selection Sort**  
+- **If the data is large (N > 10⁶) and needs stability** → **Merge Sort or Tim Sort**  
+- **If memory is limited (in-place sorting required)** → **Quick Sort or Heap Sort**  
+- **If sorting numbers in a small range (e.g., [0, 1000])** → **Counting Sort or Radix Sort**  
+- **If sorting floating-point numbers between [0,1]** → **Bucket Sort**  
+
+Would you like a deep dive into any specific algorithm? 🚀

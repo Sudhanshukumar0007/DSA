@@ -1,0 +1,16 @@
+Comparison of Searching Algorithms
+Algorithm	Best Case	Average Case	Worst Case	Works on Sorted Data?
+Linear Search	O(1)	O(N)	O(N)	No
+Binary Search	O(1)	O(log N)	O(log N)	Yes
+Jump Search	O(1)	O(√N)	O(√N)	Yes
+Exponential Search	O(1)	O(log N)	O(log N)	Yes
+Interpolation Search	O(1)	O(log log N)	O(N)	Yes (Uniform Data)
+
+
+
+When to Use Which Search Algorithm?
+Unsorted Data? → Linear Search
+Sorted Data & Small Size? → Binary Search
+Sorted Data & Large Size? → Jump Search (if size is large but not uniform)
+Sorted & Uniformly Distributed Data? → Interpolation Search
+Unknown Size (Unbounded Array)? → Exponential Search
