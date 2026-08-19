@@ -1,4 +1,4 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 int gcd(int a,int b){
     if(a==0) return b;
@@ -18,7 +18,6 @@ int main(){
     int a,b;
     cout<<"Enter the two numbers\n";
     cin>>a>>b;
-    int GCD=gcd(a,b);
-    cout<<"gcd of the given two numbers are \n"<<GCD<<endl;
+    cout<<"gcd of the given two numbers are \n"<<gcd(a,b)<<endl;
     return 0;
 }
