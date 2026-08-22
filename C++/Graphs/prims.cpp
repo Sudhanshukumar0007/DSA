@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <climits>
-#include<priority_queue>
+#include<queue>
 using namespace std;
 
 // Returns vector of edges in the MST: {{parent, node}, weight}
